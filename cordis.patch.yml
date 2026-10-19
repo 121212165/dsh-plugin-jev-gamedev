@@ -1,0 +1,11 @@
+- insert:
+    - id: jev-gamedev
+      name: dsh-plugin-jev-gamedev
+      config:
+        enabled: true
+        # dataDir: ~/.dsh/jev-gamedev
+        samples: 5     # 每个决策点的独立采样份数
+        autoGate: 0.85 # ≥ 自动执行
+        reviewGate: 0.60 # 执行+复核；以下转人工
+        divergentRange: 0.5 # 采样跨度超过即 divergent 降档
+        order: 740     # prompt section order (tools start at 1000)
